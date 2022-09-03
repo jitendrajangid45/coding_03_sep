@@ -1,0 +1,5 @@
+1.select MAX(column_name) as max from table_name
+2.select MIN(column_name) as min from table_name
+3.select AVG(column_name) as avg from table_name
+4.select COUNT(column_name) as count from table_name
+5.select SUM(column_name) as sum from table_name

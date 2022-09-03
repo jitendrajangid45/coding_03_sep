@@ -1,0 +1,22 @@
+1.create table product(
+   p_id int primary key,
+   p_price int not null,
+   p_name varchar(50) not null,
+   p_warranty int not null,
+   p_qty int
+   )
+  insert into product values(1,35000,'Washing Machine',3,10)
+  insert into product values(2,45000,'Smart TV',2,5)
+  insert into product values(3,33000,'AC',5,6)
+  insert into product (p_id,p_price,p_name,p_warranty) values(4,20000,'Home Theatre',1)
+
+  select * from product
+
+2.select * from product where p_warranty>2;
+
+3.select * from product where p_name='Smart TV';
+
+4.select * from product where p_qty is NULL;
+
+5.select AVG(p_price) as avg from product;
+  select * from product where p_price>32250;

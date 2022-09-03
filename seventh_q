@@ -1,0 +1,24 @@
+create table Employee(
+empno varchar(10) not null,
+emp_name varchar(50) not null,
+dept varchar(50) not null, 
+salary int not null,
+doj varchar(50) not null,
+branch varchar(50) not null
+)
+
+insert into Employee values('E101','Amit','production',45000,'12-Mar-00','Banglore')
+insert into Employee values('E102','Amit','HR',70000,'03-Jul-02','Banglore')
+insert into Employee values('E103','Sunita','Management',120000,'11-Jan-01','mysore')
+insert into Employee values('E105','Sunita','IT',67000,'1-aug-01','mysore')
+insert into Employee values('E106','Mahesh','civil',145000,'20-sep-03','mumbai')
+
+1. select * from Employee;
+2. select empno,salary from Employee;
+3. select AVG(salary) as average_salary from Employee;
+4. select COUNT(empno) as number_of_employes from Employee;
+5. select COUNT(distinct(emp_name)) from Employee;
+6. select emp_name,SUM(salary) as salary from Employee group by emp_name;
+7. select SUM(salary) as salary from Employee where salary>120000;
+8. select emp_name from Employee order by emp_name desc;
+9. select * from Employee where emp_name='Amit' and salary>50000;

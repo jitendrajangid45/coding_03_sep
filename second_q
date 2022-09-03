@@ -1,0 +1,16 @@
+1. select pname from Parts 
+left join 
+supplier where name='ramraj' 
+on supplier.pno=parts.id;
+
+2.select name from supplier
+left join
+supply pno 
+ 
+3. select cost from supply 
+left join
+parts where pname='bolts'
+on cost.pno=bolts.id
+left join
+supplier where city='nagpur'
+on cost.id=city.id

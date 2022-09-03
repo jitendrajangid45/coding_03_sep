@@ -1,0 +1,9 @@
+str1 = [2,15,6,15,7,2,77,88,87,88,98,2,98]
+str2 = []
+for i in str1:
+    if i in str2:
+        pass
+    else:
+        str2.append(i)
+str2.sort(reverse=True)
+print("second largest number in str1 is:",str2[1])
